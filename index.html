@@ -16,15 +16,13 @@
 <body>
     <header class="site-header">
 
-        <nav class="main-nav">
+        <nav class="main-nav container">
 
-            <!-- Company Identity -->
-            <div class="company-identity">
-                <img class="site-logo" src="img/Logo-déclinaison.svg" alt="Logo Snowmount">
-            </div>
+            <!-- Logo -->
+            <img class="site-logo" src="img/Logo.svg" alt="Logo Snowmount">
 
             <!-- Menu -->
-            <button class="toggle-menu" aria-expanded="false" aria-controls="menu">Menu</button>
+            <button class="toggle-menu" aria-expanded="false" aria-controls="menu">M</button>
             <ul id="menu" class="site-menu-list" role="list" hidden>
                 <li class="site-menu-item">
                     <a href="#" class="menu-link">Home</a>
@@ -41,79 +39,88 @@
             </ul>
         </nav>
 
-        <h1><span>Wonderfull</span>World</h1>
+        <h1 class="site-title">Wonderfull<span>World</span></h1>
 
-        <button class="btn btn-cta btn-cta-inverted">Our Work <img src="img/Icône-flèche.svg" alt=""></button>
-
+        <div class="cta-row">
+            <button class="btn btn-cta btn-cta-inverted">Our Work <img class="icone-cta-btn" src="img/Icône-flèche.svg" alt=""></button>
+        </div>
+        
     </header>
 
     <main>
 
         <!-- À Propos -->
         <section class="about-section">
-            <h2 class="section-title">About Me</h2>
-            <p class="section-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo</p>
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo</p>
+            </div>
         </section>
 
         <!-- Services -->
         <section class="features-section">
-            <h2 class="section-title">Our Work</h2>
 
-            <div class="features">
-                
-                <article class="feature-card">
-                    <a class="feature-card-link" href="#">
-                        <img class="feature-img" src="img/cold-daylight-fjord-1586298_min.webp" srcset="img/cold-daylight-fjord-1586298@2x_min.webp 2x" alt="">
-                        <h3 class="feature-title">Fly High</h3>
-                        <p class="feature-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo</p>
-                        <button class="btn btn-cta-light">See More</button>
-                    </a>
-                </article>
-                <article class="feature-card">
-                    <a class="feature-card-link" href="#">
-                        <img class="feature-img" src="img/adorable-animal-breed-434090_min.webp" srcset="img/adorable-animal-breed-434090@2x_min.webp 2x" alt="">
-                        <h3 class="feature-title">Fly High</h3>
-                        <p class="feature-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo</p>
-                        <button class="btn btn-cta-light">See More</button>
-                    </a>
-                </article>
-                <article class="feature-card">
-                    <a class="feature-card-link"href="#">
-                        <img class="feature-img" src="img/action-active-cold-2433353_min.webp" srcset="img/action-active-cold-2433353@2x_min.webp 2x" alt="">
-                        <h3 class="feature-title">Fly High</h3>
-                        <p class="feature-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo</p>
-                        <button class="btn btn-cta-light">See More</button>
-                    </a>
-                </article>
-                <article class="feature-card">
-                    <a class="feature-card-link" href="#">
-                        <img class="feature-img" src="img/adventure-adventurer-altitude-2577274_min.webp" srcset="img/adventure-adventurer-altitude-2577274@2x_min.webp 2x" alt="">
-                        <h3 class="feature-title">Fly High</h3>
-                        <p class="feature-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo</p>
-                        <button class="btn btn-cta-light">See More</button>
-                    </a>
-                </article>
-                <article class="feature-card">
-                    <a class="feature-card-link" href="#">
-                        <img class="feature-img" src="img/beatiful-landscape-cold-colors-2832052_min.webp" srcset="img/beatiful-landscape-cold-colors-2832052@2x_min.webp 2x" alt="">
-                        <h3 class="feature-title">Fly High</h3>
-                        <p class="feature-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo</p>
-                        <button class="btn btn-cta-light">See More</button>
-                    </a>
-                </article>
-            </div>
+            <div class="container">
+                <h2 class="section-title">Our Work</h2>
+
+                <div class="features">
+                    
+                    <article class="feature-card">
+                        <a class="feature-card-link" href="#">
+                            <img class="feature-img" src="img/cold-daylight-fjord-1586298_min.webp" srcset="img/cold-daylight-fjord-1586298@2x_min.webp 2x" alt="">
+                            <h3 class="feature-title">Fly High</h3>
+                            <p class="feature-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo</p>
+                            <button class="btn btn-cta-light">See More</button>
+                        </a>
+                    </article>
+                    <article class="feature-card">
+                        <a class="feature-card-link" href="#">
+                            <img class="feature-img" src="img/adorable-animal-breed-434090_min.webp" srcset="img/adorable-animal-breed-434090@2x_min.webp 2x" alt="">
+                            <h3 class="feature-title">Fly High</h3>
+                            <p class="feature-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo</p>
+                            <button class="btn btn-cta-light">See More</button>
+                        </a>
+                    </article>
+                    <article class="feature-card">
+                        <a class="feature-card-link"href="#">
+                            <img class="feature-img" src="img/action-active-cold-2433353_min.webp" srcset="img/action-active-cold-2433353@2x_min.webp 2x" alt="">
+                            <h3 class="feature-title">Fly High</h3>
+                            <p class="feature-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo</p>
+                            <button class="btn btn-cta-light">See More</button>
+                        </a>
+                    </article>
+                    <article class="feature-card">
+                        <a class="feature-card-link" href="#">
+                            <img class="feature-img" src="img/adventure-adventurer-altitude-2577274_min.webp" srcset="img/adventure-adventurer-altitude-2577274@2x_min.webp 2x" alt="">
+                            <h3 class="feature-title">Fly High</h3>
+                            <p class="feature-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo</p>
+                            <button class="btn btn-cta-light">See More</button>
+                        </a>
+                    </article>
+                    <article class="feature-card">
+                        <a class="feature-card-link" href="#">
+                            <img class="feature-img" src="img/beatiful-landscape-cold-colors-2832052_min.webp" srcset="img/beatiful-landscape-cold-colors-2832052@2x_min.webp 2x" alt="">
+                            <h3 class="feature-title">Fly High</h3>
+                            <p class="feature-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo</p>
+                            <button class="btn btn-cta-light">See More</button>
+                        </a>
+                    </article>
+                </div> <!-- End Features -->
+            </div> <!-- End Container -->
 
         </section>
 
 
         <!-- Témoignages -->
         <section class="testimonials-section">
-            <h2 class="section-title">Testimonial</h2>
+            <div class="container">
+                <h2 class="section-title">Testimonial</h2>
 
-            <div class="slider">
-                <img class="testimonial-picture" src="" alt="">
-                <h3 class="testimonial-name">Carolyn Clark</h3>
-                <p class="testimonial-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo</p>
+                <div class="slider">
+                    <img class="testimonial-picture" src="" alt="">
+                    <h3 class="testimonial-name">Carolyn Clark</h3>
+                    <p class="testimonial-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo</p>
+                </div>
             </div>
         </section>
 
@@ -122,11 +129,11 @@
     <!-- Footer -->
     <footer>
 
-        <div class="footer-logo-item">
+        <div class="footer-logo-item container">
             <a href="#"><img class="footer-logo" src="" alt=""></a>
         </div>
 
-        <div class="contacts">
+        <div class="contacts container">
             <div>
                 <h3 class="footer-title">Location</h3>
                 <address>
@@ -147,7 +154,7 @@
             
         </div>
 
-        <div class="socials">
+        <div class="socials container">
             <ul>
                 <li><a href="#"><img src="img/Facebook.svg" alt=""></a></li>
                 <li><a href="#"><img src="img/Instagram.svg" alt=""></a></li>
