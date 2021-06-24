@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wonderfull World</title>
 
+    <!-- Required Core Stylesheet -->
+    <link rel="stylesheet" href="css/glide.core.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-iKbFRxucmOHIcpWdX9NTZ5WETOPm0Goy0WmfyNcl52qSYtc2Buk0NCe6jU1sWWNB" crossorigin="anonymous">
+
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/helpers.css">
@@ -22,10 +27,10 @@
             <img class="site-logo" src="img/320px/Logo.svg" alt="Logo Snowmount">
 
             <!-- Menu -->
-            <button class="toggle-menu" aria-expanded="false" aria-controls="menu">M</button>
-            <ul id="menu" class="site-menu-list" role="list" hidden>
+            <button class="toggle-menu" aria-expanded="false" aria-controls="menu"><i class="fas fa-cheeseburger"></i></button> 
+            <ul id="menu" class="menu site-menu-list" role="list" hidden>
                 <li class="site-menu-item">
-                    <a href="#" class="menu-link">Home</a>
+                    <a href="#" class="menu-link active">Home</a>
                 </li>
                 <li class="site-menu-item">
                     <a href="#" class="menu-link">About</a>
@@ -34,7 +39,7 @@
                     <a href="#" class="menu-link">Contact</a>
                 </li>
                 <li class="site-menu-item">
-                    <a href="#" class="btn cta-btn">Say Hello</a>
+                    <a href="#" class="btn cta-menu-btn">Say Hello</a>
                 </li>
             </ul>
         </nav>
@@ -66,37 +71,39 @@
                 <div class="features">
                     
                     <article class="feature-card" id="card-1">
-                        <h3 class="feature-title">Fly High</h3>
-                        <p class="feature-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo</p>
-                        <button class="btn btn-cta-light" type="button" href="#">See More</button>
+                        <div class="feature-content">
+                            <h3 class="feature-title">Fly High</h3>
+                            <p class="feature-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo</p>
+                            <a class="btn btn-cta-light" type="button" href="#">See More</a>
+                        </div>
                     </article>
                     <article class="feature-card" id="card-2">
-                        <a class="feature-card-link" href="#">
+                        <div class="feature-content">
                             <h3 class="feature-title">Fly High</h3>
                             <p class="feature-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo</p>
-                            <button class="btn btn-cta-light" type="button" href="#">See More</button>
-                        </a>
+                            <a class="btn btn-cta-light" type="button" href="#">See More</a>
+                        </div>
                     </article>
                     <article class="feature-card" id="card-3">
-                        <a class="feature-card-link"href="#">
+                        <div class="feature-content">
                             <h3 class="feature-title">Fly High</h3>
                             <p class="feature-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo</p>
-                            <button class="btn btn-cta-light" type="button" href="#">See More</button>
-                        </a>
+                            <a class="btn btn-cta-light" type="button" href="#">See More</a>
+                        </div>
                     </article>
                     <article class="feature-card" id="card-4">
-                        <a class="feature-card-link" href="#">
+                        <div class="feature-content">
                             <h3 class="feature-title">Fly High</h3>
                             <p class="feature-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo</p>
-                            <button class="btn btn-cta-light" type="button" href="#">See More</button>
-                        </a>
+                            <a class="btn btn-cta-light" type="button" href="#">See More</a>
+                        </div>
                     </article>
                     <article class="feature-card" id="card-5">
-                        <a class="feature-card-link" href="#">
+                        <div class="feature-content">
                             <h3 class="feature-title">Fly High</h3>
                             <p class="feature-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo</p>
-                            <button class="btn btn-cta-light" type="button" href="#">See More</button>
-                        </a>
+                            <a class="btn btn-cta-light" type="button" href="#">See More</a>
+                        </div>
                     </article>
                 </div> <!-- End Features -->
             </div> <!-- End Container -->
@@ -109,11 +116,36 @@
             <div class="container">
                 <h2 class="section-title">Testimonial</h2>
 
-                <div class="slider">
-                    <img class="testimonial-picture" src="img/320px/Photo_min.webp" srcset="img/320px/Photo@2x_min.webp 2x" alt="">
-                    <h3 class="testimonial-name">Carolyn Clark</h3>
-                    <p class="testimonial-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo</p>
+                <div class="glide">
+                    <div class="glide__track" data-glide-el="track">
+                        <div class="glide__slides">
+                            <div class="glide__slide">
+                                <div class="glide-container">
+                                    <img class="testimonial-picture" src="img/320px/Photo_min.webp" srcset="img/320px/Photo@2x_min.webp 2x" alt="">
+                                    <h3 class="testimonial-name">Carolyn Clark</h3>
+                                    <p class="testimonial-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo</p>
+                                </div>
+                            </div>
+                            <div class="glide__slide">
+                                <img class="testimonial-picture" src="https://www.placecage.com/600/600" alt="">
+                                <h3 class="testimonial-name">Nicolas Cage</h3>
+                                <p class="testimonial-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo</p>
+                            </div>
+                            <div class="glide__slide">
+                                <img class="testimonial-picture" src="https://placebear.com/500/500" alt="">
+                                <h3 class="testimonial-name">Mister Bear</h3>
+                                <p class="testimonial-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glide__bullets" data-glide-el="controls[nav]">
+                        <button class="glide__bullet" data-glide-dir="=0"></button>
+                        <button class="glide__bullet" data-glide-dir="=1"></button>
+                        <button class="glide__bullet" data-glide-dir="=2"></button>
+                    </div>
                 </div>
+
             </div>
         </section>
 
@@ -124,12 +156,12 @@
 
         <div class="container footer-container">
 
-
+            <!-- Logo -->
             <div class="footer-logo-item">
                 <a href="#"><img class="footer-logo" src="img/320px/Logo-déclinaison.svg" alt=""></a>
             </div>
 
-
+            <!-- Location -->
             <div class="location">
                 <h3 class="footer-title">Location</h3>
                 <address>
@@ -141,7 +173,7 @@
                 </address>
             </div>
 
-
+            <!-- Contacts -->
             <div class="contact">
                 <h3 class="footer-title">Contact</h3>
                 <ul class="contact-list" role="list">
@@ -150,7 +182,7 @@
                 </ul>
             </div>
 
-
+            <!-- Socials -->
             <div class="socials">
                 <ul role="list">
                     <li><a href="#"><img src="img/320px/Facebook.svg" alt=""></a></li>
@@ -165,6 +197,18 @@
 
     <!-- Script Burger Menu -->
     <script src="js/burger-menu.js"></script>
+    <script src="js/glide.js"></script>
+
+    <script>
+
+        new Glide('.glide', {
+            type: 'carousel',
+            startAt: 0,
+            autoplay: 5000,
+        }).mount()
+
+    </script>
+
 
 </body>
 </html>
