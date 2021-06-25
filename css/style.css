@@ -85,8 +85,6 @@ h1 {
 
 
 
-
-
 /* Layout */
 .container {
     max-width: 29rem;
@@ -320,7 +318,7 @@ h1 {
     .cta-menu-btn {
         padding: 1.4rem 3.2rem;
     }
-} /* End of navigation */
+}   /* End of navigation */
 
 
 /* HEADER ----------------------------------------------------------------------------------------- HEADER */
